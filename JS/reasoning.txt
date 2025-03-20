@@ -1,0 +1,29 @@
+
+I'll be honest this field is very new to me and so I may be misunderstanding, but let me explain my thoughts.
+
+Why:
+
+let operator = [];
+let num1 = [];
+let num2 = [];
+
+Reasoning:
+
+From the things I've looked around at and read up on, they said that the feedback within the terminal is automatically received as a string item.
+That's the reason why you can't directly add the feedback to another number even if the item is already Number(4). Number(4) + feedback(2) should equal 6 but would in this manner equal 42.
+Now if I move down to my later reset item isFinished() because I did use an array if I cycle through repeating the same equation my output would be 6, 6 or 6,6 not just 6
+So I reset my arrays using .pop() before any data is added, removing the previous answer
+
+let operator = '';
+let num1 = 0;
+let num2 = 0;
+
+
+Though if I did use a number or string I could just use += and directly add each item, but I have to convert it to a Number() sooner rather than just .push()
+I just thought it's best to use to base feedback more than some data I converted in the beginning and could've messed up
+
+Also with resetting the answer later I'd have to convert it back to a string using .split() and then still use .pop() taking more uses for a larger number 
+So by keeping everything as arrays it was easier to work with the root information
+
+Granted. I'm very new with this so I might just be making myself work harder for no reason.
+I tried using numbers when I started but they were breaking it so I went to Arrays and had no issues. Could you explain more why one is better than the other?
